@@ -68,8 +68,13 @@ p.text {
 	line-height:0;
 	padding-right:300px;
 }
-
-
+#globalmenu{
+	background-color: rgb(255, 255, 255);
+  box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
+   	
+  width: 1170px;
+  height: 800px;
+}
 
 
 
