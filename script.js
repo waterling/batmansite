@@ -161,8 +161,12 @@ function checkCoords(input) {
     checkIfFull(document.getElementById('coordX'),document.getElementById('coordY'));
     var ch = input.value;
     ch= ch.replace(/[^-\?+0-9]/g, '');
-    if (ch>=21 || ch<=-21){
-        ch = "";
+    if (ch>=21){
+        ch = 21;
+    } else{
+        if (ch<=-21){
+            ch=-21
+        }
     }
     input.value=ch;
     input.placeholder="Не подходит";
@@ -171,6 +175,11 @@ function checkCoords(input) {
 function checkIfFull(input,input2) {
     if (input.value!==''&&input2.value!==''){
         document.getElementById('submit').removeAttribute("disabled");
+        if (input.value!==''){
+            input.placeholder="Заполните, плизки";
+        }else{
+            input2.placeholder="Заполните, плизки";
+        }
     }else{
         document.getElementById('submit').setAttribute("disabled",'disabled');
     }

@@ -242,7 +242,7 @@ echo '<!DOCTYPE HTML>
 			
 			<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
 			<form>
-			    <input type="button" id="btnClose" value="close" onclick="window.close()">
+			<button onclick="window.close()" type="submit" id="submit" class="submit-btnclose">закрыть</button>
 		    </form>
 		<br> <br> <br> <br> <br> <br> <br> <br>
 			<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>

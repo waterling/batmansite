@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html >
 <head>
-    <meta charset="UTF-8" ;>
+    <meta charset="UTF-8" >
     <title>Batman</title>
     <link rel="shortcut icon" href="logobatman1.png">
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -12,6 +12,7 @@
     <script src="script.js">
     </script>
 
+
 </head>
 <body onload="swap2()">
 
@@ -19,7 +20,6 @@
 <table width="100%" cellspacing="0" height="100%">
     <tr id="tr-top-header">
         <td width="20%"></td>
-        <!--<td > <img src="logobatman.png" width="124" height="60" alt="логотип">  </td>-->
         <td align="right" style="min-width:1170px" colspan="3" width="1170px">
             <img src="logobatman.png" align="left" vspace="10px" width="260" height="60" alt="логотип">
             <p class="text" id="variant">Вариант 13</p>
@@ -67,13 +67,13 @@
 
         <td align="center" id="menu2">
 
-            <input type="text"  onload="checkCoords(this)" onkeydown="if(event.keyCode===13){return false;}" onkeyup="checkCoords(this)" name="x"  id="coordX"
+            <input type="text"  onload="checkCoords(this)" onkeydown="if(event.keyCode===13){return false;}" onchange="checkCoords(this)" name="x"  id="coordX"
                    placeholder="Введите X">
             <br><br><br>
             <input type="text" onload="checkCoords(this)" onkeydown="if(event.keyCode===13){return false;}" onchange="checkCoords(this)" name="y"  id="coordY"
                    placeholder="Введите Y">
             <br><br><br>
-            <button onclick="getCoords(this)" type="submit" id="submit" class="submit-btn" >отправить</button>
+            <button onclick="getCoords(this)" type="submit" id="submit" class="submit-btn">отправить</button>
             <br><br><br>
 
         </td>

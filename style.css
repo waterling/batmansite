@@ -79,6 +79,27 @@ p.text {
 
 
 
+/*Кнопка "Закрыть"*/
+.submit-btnclose {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  height: 45px; 
+  min-width: 200px;
+  margin-right: 20px;
+  border: none; 
+  border-radius: 35px;  
+  padding-right: 30px;
+  background: #ff5c5a;
+  color: white;
+  font-size: 20px;
+}
+.submit-btnclose:last-of-type {margin-right: 0;}
+@keyframes float {
+  0%, 100% {transform: translateY(0);}
+  50% {transform: translateY(-8px);}
+}
+/*Закончилась кнопка*/
 /*Кнопка "Отправить"*/
 .submit-btn {
   display: inline-block;
@@ -108,6 +129,9 @@ p.text {
   border-radius: 50%; 
   color: white; 
   font-size: 22px;   
+}
+.submit-btn:disabled{
+	background: rgb(43,42,41);
 }
 @keyframes float {
   0%, 100% {transform: translateY(0);}
